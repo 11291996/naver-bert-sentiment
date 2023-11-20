@@ -1,0 +1,26 @@
+
+  0%|                                                                                                                                                                       | 0/12 [00:02<?, ?batch/s]
+Traceback (most recent call last):
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 258, in <module>
+    main()
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 242, in main
+    train_loss, train_acc = model_train(bert, train_loader, loss_fn, optimizer, device)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 152, in model_train
+    corr = accelerator.gather(corr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/accelerate/accelerator.py", line 2180, in gather
+    return gather(tensor)
+           ^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/accelerate/utils/operations.py", line 314, in wrapper
+    return function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/accelerate/utils/operations.py", line 370, in gather
+    return _gpu_gather(tensor)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/accelerate/utils/operations.py", line 294, in _gpu_gather
+    return recursively_apply(_gpu_gather_one, tensor, error_on_other_type=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/accelerate/utils/operations.py", line 130, in recursively_apply
+    raise TypeError(
+TypeError: Unsupported types (<class 'int'>) passed to `_gpu_gather_one`. Only nested list/tuple/dicts of objects that are valid for `is_torch_tensor` should be passed.

@@ -1,0 +1,131 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+training loss: 17.29266, training accuracy: 0.73188:  29%|██████████████████████████████▌                                                                         | 69/235 [01:19<03:12,  1.16s/batch]Exception ignored in: <generator object tqdm.__iter__ at 0x7f2ef6f34890>
+Traceback (most recent call last):
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/tqdm/std.py", line 1197, in __iter__
+    self.close()
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/tqdm/std.py", line 1303, in close
+    self.display(pos=0)
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/tqdm/std.py", line 1496, in display
+    self.sp(self.__str__() if msg is None else msg)
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/tqdm/std.py", line 462, in print_status
+    fp_write('\r' + s + (' ' * max(last_len[0] - len_s, 0)))
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/tqdm/std.py", line 455, in fp_write
+    fp.write(str(s))
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/tqdm/utils.py", line 195, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 643, in write
+    cb(data)
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2129, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 370, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1465, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 617, in publish_output_raw
+    o.timestamp.GetCurrentTime()
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/google/protobuf/internal/well_known_types.py", line 195, in GetCurrentTime
+    def GetCurrentTime(self):
+KeyboardInterrupt:
+Traceback (most recent call last):
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 258, in <module>
+    main()
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 242, in main
+    train_loss, train_acc = model_train(bert, train_loader, loss_fn, optimizer, device)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 140, in model_train
+    output = model(**inputs)
+             ^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/parallel/distributed.py", line 1156, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/parallel/distributed.py", line 1110, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])  # type: ignore[index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 100, in forward
+    output = self.bert(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/models/bert/modeling_bert.py", line 1022, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/models/bert/modeling_bert.py", line 612, in forward
+    layer_outputs = layer_module(
+                    ^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/models/bert/modeling_bert.py", line 539, in forward
+    layer_output = apply_chunking_to_forward(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/pytorch_utils.py", line 240, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/models/bert/modeling_bert.py", line 552, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/models/bert/modeling_bert.py", line 464, in forward
+    hidden_states = self.dense(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

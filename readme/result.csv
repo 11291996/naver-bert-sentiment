@@ -1,0 +1,6 @@
+﻿Name,Runtime(Sec),User,architecture,batch_size,dataset,epochs,learning_rate,portion
+wobbly-fire-23,7140,paneah,KoBERT,128,Naver Sentiment Movie Corpus,10,0.000001,0.5
+twilight-snowflake-17,588,paneah,KoBERT,32,Naver Sentiment Movie Corpus,10,0.00001,0.2
+feasible-blaze-20,6915,paneah,KoBERT,32,Naver Sentiment Movie Corpus,10,0.0001,0.2
+bright-vortex-22,1442,paneah,KoBERT,128,Naver Sentiment Movie Corpus,10,0.0001,0.1
+stoic-moon-21,2865,paneah,KoBERT,128,Naver Sentiment Movie Corpus,10,0.00001,0.2

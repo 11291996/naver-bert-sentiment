@@ -1,0 +1,12 @@
+
+  0%|                                                                                                                                                                       | 0/12 [00:02<?, ?batch/s]
+Traceback (most recent call last):
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 255, in <module>
+    main()
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 239, in main
+    train_loss, train_acc = model_train(bert, train_loader, loss_fn, optimizer, device)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 162, in model_train
+    prograss_bar.set_description(f"training loss: {running_loss_/(idx+1):.5f}, training accuracy: {corr / counts:.5f}")
+                                                   ^^^^^^^^^^^^^
+NameError: name 'running_loss_' is not defined

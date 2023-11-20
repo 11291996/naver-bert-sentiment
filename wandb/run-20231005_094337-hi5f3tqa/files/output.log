@@ -1,0 +1,66 @@
+[INFO] val_loss has been improved from inf to 0.17857. Saving Model!
+epoch 01, loss: 0.00000, acc: 0.00000, val_loss: 0.71429, val_accuracy: 0.53040
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/wandb/sdk/lib/exit_hooks.py", line 52, in exc_handler
+    traceback.print_exception(exc_type, exc, tb)
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/traceback.py", line 124, in print_exception
+    te = TracebackException(type(value), value, tb, limit=limit, compact=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/traceback.py", line 692, in __init__
+    self.stack = StackSummary._extract_from_extended_frame_gen(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/traceback.py", line 421, in _extract_from_extended_frame_gen
+    fnames.add(filename)
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 254, in <module>
+    main()
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 241, in main
+    val_loss, val_acc = model_evaluate(bert, test_loader, loss_fn, device)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 181, in model_evaluate
+    for inputs, labels in data_loader:
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/accelerate/data_loader.py", line 394, in __iter__
+    next_batch = next(dataloader_iter)
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 50, in __getitem__
+    tokens = self.tokenizer(
+             ^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2806, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2912, in _call_one
+    return self.encode_plus(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2985, in encode_plus
+    return self._encode_plus(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 544, in _encode_plus
+    batched_output = self._batch_encode_plus(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 520, in _batch_encode_plus
+    return BatchEncoding(sanitized_tokens, sanitized_encodings, tensor_type=return_tensors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 223, in __init__
+    self.convert_to_tensors(tensor_type=tensor_type, prepend_batch_axis=prepend_batch_axis)
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 748, in convert_to_tensors
+    tensor = as_tensor(value)
+             ^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 720, in as_tensor
+    return torch.tensor(value)
+           ^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

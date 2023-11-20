@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+training loss: 102.66569, training accuracy: 0.49089: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 12/12 [00:15<00:00,  1.30s/batch]
+[INFO] val_loss has been improved from inf to 0.21747. Saving Model!
+epoch 01, loss: 0.82133, acc: 0.50267, val_loss: 0.21747, val_accuracy: 0.17667
+
+
+
+training loss: 98.89096, training accuracy: 0.48828:  50%|█████████████████████████████████████████████████████                                                     | 6/12 [00:08<00:08,  1.37s/batch]
+Traceback (most recent call last):
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 256, in <module>
+    main()
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 240, in main
+    train_loss, train_acc = model_train(bert, train_loader, loss_fn, optimizer, device)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 141, in model_train
+    accelerator.backward(loss)
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/accelerate/accelerator.py", line 1985, in backward
+    loss.backward(**kwargs)
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

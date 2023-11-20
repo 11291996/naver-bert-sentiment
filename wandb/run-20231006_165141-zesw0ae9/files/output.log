@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+training loss: 99.77511, training accuracy: 0.49870: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 12/12 [00:15<00:00,  1.28s/batch]
+Traceback (most recent call last):
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 257, in <module>
+    main()
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 244, in main
+    val_loss, val_acc = model_evaluate(bert, test_loader, loss_fn, device)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 204, in model_evaluate
+    running_loss += loss_fn(output, labels).item() * labels.size(0)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/modules/loss.py", line 1174, in forward
+    return F.cross_entropy(input, target, weight=self.weight,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/paneah/anaconda3/envs/LIS8040/lib/python3.11/site-packages/torch/nn/functional.py", line 3029, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Expected input batch_size (32) to match target batch_size (128).

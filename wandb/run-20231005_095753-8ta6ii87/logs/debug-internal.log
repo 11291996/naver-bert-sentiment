@@ -1,0 +1,193 @@
+2023-10-05 09:57:53,477 INFO    StreamThr :48706 [internal.py:wandb_internal():86] W&B internal server running at pid: 48706, started at: 2023-10-05 09:57:53.476599
+2023-10-05 09:57:53,481 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: status
+2023-10-05 09:57:53,483 INFO    WriterThread:48706 [datastore.py:open_for_write():85] open: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/run-8ta6ii87.wandb
+2023-10-05 09:57:53,487 DEBUG   SenderThread:48706 [sender.py:send():380] send: header
+2023-10-05 09:57:53,490 DEBUG   SenderThread:48706 [sender.py:send():380] send: run
+2023-10-05 09:57:54,001 INFO    SenderThread:48706 [dir_watcher.py:__init__():211] watching files in: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files
+2023-10-05 09:57:54,002 INFO    SenderThread:48706 [sender.py:_start_run_threads():1122] run started: 8ta6ii87 with start time 1696467473.476241
+2023-10-05 09:57:54,023 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: check_version
+2023-10-05 09:57:54,023 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: check_version
+2023-10-05 09:57:54,082 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: run_start
+2023-10-05 09:57:54,089 DEBUG   HandlerThread:48706 [system_info.py:__init__():32] System info init
+2023-10-05 09:57:54,089 DEBUG   HandlerThread:48706 [system_info.py:__init__():47] System info init done
+2023-10-05 09:57:54,089 INFO    HandlerThread:48706 [system_monitor.py:start():181] Starting system monitor
+2023-10-05 09:57:54,090 INFO    SystemMonitor:48706 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-10-05 09:57:54,090 INFO    HandlerThread:48706 [system_monitor.py:probe():201] Collecting system info
+2023-10-05 09:57:54,091 INFO    SystemMonitor:48706 [interfaces.py:start():190] Started cpu monitoring
+2023-10-05 09:57:54,093 INFO    SystemMonitor:48706 [interfaces.py:start():190] Started disk monitoring
+2023-10-05 09:57:54,094 INFO    SystemMonitor:48706 [interfaces.py:start():190] Started gpu monitoring
+2023-10-05 09:57:54,099 INFO    SystemMonitor:48706 [interfaces.py:start():190] Started memory monitoring
+2023-10-05 09:57:54,101 INFO    SystemMonitor:48706 [interfaces.py:start():190] Started network monitoring
+2023-10-05 09:57:54,102 ERROR   gpu       :48706 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-05 09:57:54,103 ERROR   gpu       :48706 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-05 09:57:54,109 DEBUG   HandlerThread:48706 [system_info.py:probe():196] Probing system
+2023-10-05 09:57:54,112 DEBUG   HandlerThread:48706 [system_info.py:_probe_git():181] Probing git
+2023-10-05 09:57:54,122 DEBUG   HandlerThread:48706 [system_info.py:_probe_git():189] Probing git done
+2023-10-05 09:57:54,122 DEBUG   HandlerThread:48706 [system_info.py:probe():244] Probing system done
+2023-10-05 09:57:54,122 DEBUG   HandlerThread:48706 [system_monitor.py:probe():210] {'os': 'Linux-3.10.0-1160.15.2.el7.x86_64-x86_64-with-glibc2.17', 'python': '3.11.5', 'heartbeatAt': '2023-10-05T00:57:54.109750', 'startedAt': '2023-10-05T00:57:53.455352', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'train.py', 'codePathLocal': 'train.py', 'codePath': 'projects/machine learning/nlp/naver_bert_sentiment/train.py', 'git': {'remote': 'https://github.com/11291996/developing.git', 'commit': '6f94f67cd95f487e6e790aaf08081896e82f03a5'}, 'email': 'jaewan1040@yonsei.ac.kr', 'root': '/home/paneah/Desktop/developing', 'host': 'yonsei-ai-login3', 'username': 'paneah', 'executable': '/home/paneah/anaconda3/envs/LIS8040/bin/python', 'cpu_count': 52, 'cpu_count_logical': 52, 'cpu_freq': {'current': 2200.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}, {'current': 2200.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 263.79315185546875, 'used': 3.8052024841308594}}, 'gpu': 'NVIDIA GeForce GT 1030', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GT 1030', 'memory_total': 2147483648}], 'memory': {'total': 440.38428115844727}}
+2023-10-05 09:57:54,123 INFO    HandlerThread:48706 [system_monitor.py:probe():211] Finished collecting system info
+2023-10-05 09:57:54,123 INFO    HandlerThread:48706 [system_monitor.py:probe():214] Publishing system info
+2023-10-05 09:57:54,124 DEBUG   HandlerThread:48706 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-05 09:57:54,126 DEBUG   HandlerThread:48706 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-05 09:57:54,126 DEBUG   HandlerThread:48706 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-10-05 09:57:55,007 INFO    Thread-17 :48706 [dir_watcher.py:_on_file_created():271] file/dir created: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/conda-environment.yaml
+2023-10-05 09:57:55,007 INFO    Thread-17 :48706 [dir_watcher.py:_on_file_created():271] file/dir created: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/requirements.txt
+2023-10-05 09:57:56,104 ERROR   gpu       :48706 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-05 09:57:56,104 ERROR   gpu       :48706 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-05 09:57:57,003 INFO    Thread-17 :48706 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/conda-environment.yaml
+2023-10-05 09:57:57,107 DEBUG   HandlerThread:48706 [system_info.py:_save_conda():87] Saving conda packages done
+2023-10-05 09:57:57,112 INFO    HandlerThread:48706 [system_monitor.py:probe():216] Finished publishing system info
+2023-10-05 09:57:57,117 DEBUG   SenderThread:48706 [sender.py:send():380] send: files
+2023-10-05 09:57:57,117 INFO    SenderThread:48706 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-05 09:57:57,126 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 09:57:57,127 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 09:57:57,133 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 09:57:57,336 DEBUG   SenderThread:48706 [sender.py:send():380] send: telemetry
+2023-10-05 09:57:57,831 INFO    wandb-upload_0:48706 [upload_job.py:push():131] Uploaded file /tmp/tmpw_1t58biwandb/xr1egl9j-wandb-metadata.json
+2023-10-05 09:57:58,004 INFO    Thread-17 :48706 [dir_watcher.py:_on_file_created():271] file/dir created: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/wandb-metadata.json
+2023-10-05 09:57:58,106 ERROR   gpu       :48706 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-05 09:57:58,106 ERROR   gpu       :48706 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-05 09:57:58,920 DEBUG   SenderThread:48706 [sender.py:send():380] send: exit
+2023-10-05 09:57:58,920 INFO    SenderThread:48706 [sender.py:send_exit():585] handling exit code: 1
+2023-10-05 09:57:58,921 INFO    SenderThread:48706 [sender.py:send_exit():587] handling runtime: 4
+2023-10-05 09:57:58,926 INFO    SenderThread:48706 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-05 09:57:58,926 INFO    SenderThread:48706 [sender.py:send_exit():593] send defer
+2023-10-05 09:57:58,927 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:57:58,927 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 0
+2023-10-05 09:57:58,928 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 09:57:58,928 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:57:58,929 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-10-05 09:57:58,930 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 1
+2023-10-05 09:57:58,931 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:57:58,931 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 1
+2023-10-05 09:57:58,931 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:57:58,932 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-10-05 09:57:58,932 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 2
+2023-10-05 09:57:58,932 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:57:58,933 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 2
+2023-10-05 09:57:58,933 INFO    HandlerThread:48706 [system_monitor.py:finish():190] Stopping system monitor
+2023-10-05 09:57:58,934 DEBUG   SystemMonitor:48706 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-10-05 09:57:58,935 DEBUG   SystemMonitor:48706 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-10-05 09:57:58,935 INFO    HandlerThread:48706 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-05 09:57:58,935 DEBUG   SystemMonitor:48706 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-10-05 09:57:58,936 INFO    HandlerThread:48706 [interfaces.py:finish():202] Joined disk monitor
+2023-10-05 09:57:58,976 ERROR   gpu       :48706 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-10-05 09:57:58,976 INFO    HandlerThread:48706 [interfaces.py:finish():202] Joined gpu monitor
+2023-10-05 09:57:58,977 INFO    HandlerThread:48706 [interfaces.py:finish():202] Joined memory monitor
+2023-10-05 09:57:58,978 INFO    HandlerThread:48706 [interfaces.py:finish():202] Joined network monitor
+2023-10-05 09:57:58,979 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:57:58,979 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-10-05 09:57:58,979 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 3
+2023-10-05 09:57:58,980 DEBUG   SenderThread:48706 [sender.py:send():380] send: stats
+2023-10-05 09:57:58,980 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:57:58,981 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 3
+2023-10-05 09:57:58,981 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:57:58,982 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-10-05 09:57:58,982 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 4
+2023-10-05 09:57:58,982 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:57:58,983 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 4
+2023-10-05 09:57:58,983 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:57:58,983 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-10-05 09:57:58,983 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 5
+2023-10-05 09:57:58,984 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:57:58,985 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 5
+2023-10-05 09:57:58,985 DEBUG   SenderThread:48706 [sender.py:send():380] send: summary
+2023-10-05 09:57:58,987 INFO    SenderThread:48706 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-05 09:57:58,987 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:57:58,988 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-10-05 09:57:58,988 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 6
+2023-10-05 09:57:58,988 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:57:58,989 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 6
+2023-10-05 09:57:58,989 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:57:58,989 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-10-05 09:57:58,995 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 09:57:59,005 INFO    Thread-17 :48706 [dir_watcher.py:_on_file_created():271] file/dir created: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/wandb-summary.json
+2023-10-05 09:57:59,005 INFO    Thread-17 :48706 [dir_watcher.py:_on_file_created():271] file/dir created: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/output.log
+2023-10-05 09:57:59,228 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 7
+2023-10-05 09:57:59,228 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:57:59,229 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 7
+2023-10-05 09:57:59,229 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:57:59,230 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-10-05 09:57:59,920 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-05 09:58:00,006 INFO    Thread-17 :48706 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/config.yaml
+2023-10-05 09:58:00,399 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 8
+2023-10-05 09:58:00,399 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: poll_exit
+2023-10-05 09:58:00,400 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:58:00,401 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 8
+2023-10-05 09:58:00,401 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:58:00,402 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-10-05 09:58:00,402 INFO    SenderThread:48706 [job_builder.py:build():281] Attempting to build job artifact
+2023-10-05 09:58:00,403 INFO    SenderThread:48706 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-10-05 09:58:00,406 INFO    SenderThread:48706 [job_builder.py:build():369] adding wandb-job metadata file
+2023-10-05 09:58:00,415 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 9
+2023-10-05 09:58:00,415 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:58:00,415 DEBUG   SenderThread:48706 [sender.py:send():380] send: artifact
+2023-10-05 09:58:00,416 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 9
+2023-10-05 09:58:00,921 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-05 09:58:01,006 INFO    Thread-17 :48706 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/output.log
+2023-10-05 09:58:01,527 INFO    SenderThread:48706 [sender.py:send_artifact():1456] sent artifact job-https___github.com_11291996_developing.git_projects_machine_learning_nlp_naver_bert_sentiment_train.py - {'id': 'QXJ0aWZhY3Q6NTk0MTU4Mjg0', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwNDE2NTQ1NA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTk0MTgwNzE0', 'versionIndex': 4}}}
+2023-10-05 09:58:01,527 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:58:01,528 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-10-05 09:58:01,528 INFO    SenderThread:48706 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-05 09:58:02,007 INFO    SenderThread:48706 [dir_watcher.py:finish():388] scan: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files
+2023-10-05 09:58:02,008 INFO    SenderThread:48706 [dir_watcher.py:finish():402] scan save: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/config.yaml config.yaml
+2023-10-05 09:58:02,008 INFO    SenderThread:48706 [dir_watcher.py:finish():402] scan save: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/requirements.txt requirements.txt
+2023-10-05 09:58:02,015 INFO    SenderThread:48706 [dir_watcher.py:finish():402] scan save: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/conda-environment.yaml conda-environment.yaml
+2023-10-05 09:58:02,015 INFO    SenderThread:48706 [dir_watcher.py:finish():402] scan save: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/wandb-metadata.json wandb-metadata.json
+2023-10-05 09:58:02,021 INFO    SenderThread:48706 [dir_watcher.py:finish():402] scan save: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/output.log output.log
+2023-10-05 09:58:02,028 INFO    SenderThread:48706 [dir_watcher.py:finish():402] scan save: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/wandb-summary.json wandb-summary.json
+2023-10-05 09:58:02,030 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 10
+2023-10-05 09:58:02,030 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: poll_exit
+2023-10-05 09:58:02,030 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:58:02,037 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 10
+2023-10-05 09:58:02,043 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:58:02,044 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-10-05 09:58:02,044 INFO    SenderThread:48706 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-05 09:58:02,530 INFO    wandb-upload_0:48706 [upload_job.py:push():131] Uploaded file /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/config.yaml
+2023-10-05 09:58:02,545 INFO    wandb-upload_1:48706 [upload_job.py:push():131] Uploaded file /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/requirements.txt
+2023-10-05 09:58:02,569 INFO    wandb-upload_3:48706 [upload_job.py:push():131] Uploaded file /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/output.log
+2023-10-05 09:58:02,585 INFO    wandb-upload_4:48706 [upload_job.py:push():131] Uploaded file /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/wandb-summary.json
+2023-10-05 09:58:03,016 INFO    wandb-upload_2:48706 [upload_job.py:push():131] Uploaded file /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/files/conda-environment.yaml
+2023-10-05 09:58:03,216 INFO    Thread-16 (_thread_body):48706 [sender.py:transition_state():613] send defer: 11
+2023-10-05 09:58:03,217 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:58:03,217 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 11
+2023-10-05 09:58:03,218 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:58:03,218 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-10-05 09:58:03,219 INFO    SenderThread:48706 [file_pusher.py:join():181] waiting for file pusher
+2023-10-05 09:58:03,220 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 12
+2023-10-05 09:58:03,220 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:58:03,221 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 12
+2023-10-05 09:58:03,221 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:58:03,222 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-10-05 09:58:03,222 INFO    SenderThread:48706 [file_stream.py:finish():595] file stream finish called
+2023-10-05 09:58:03,419 INFO    SenderThread:48706 [file_stream.py:finish():599] file stream finish is done
+2023-10-05 09:58:03,420 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 13
+2023-10-05 09:58:03,420 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:58:03,420 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 13
+2023-10-05 09:58:03,421 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:58:03,421 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-10-05 09:58:03,422 INFO    SenderThread:48706 [sender.py:transition_state():613] send defer: 14
+2023-10-05 09:58:03,422 DEBUG   SenderThread:48706 [sender.py:send():380] send: final
+2023-10-05 09:58:03,422 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 09:58:03,423 DEBUG   SenderThread:48706 [sender.py:send():380] send: footer
+2023-10-05 09:58:03,423 INFO    HandlerThread:48706 [handler.py:handle_request_defer():170] handle defer: 14
+2023-10-05 09:58:03,425 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: defer
+2023-10-05 09:58:03,425 INFO    SenderThread:48706 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-10-05 09:58:03,426 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-05 09:58:03,426 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: poll_exit
+2023-10-05 09:58:03,427 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: server_info
+2023-10-05 09:58:03,428 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: get_summary
+2023-10-05 09:58:03,428 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: server_info
+2023-10-05 09:58:03,428 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: sampled_history
+2023-10-05 09:58:03,434 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 09:58:03,435 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: job_info
+2023-10-05 09:58:03,607 DEBUG   SenderThread:48706 [sender.py:send_request():407] send_request: job_info
+2023-10-05 09:58:03,608 INFO    MainThread:48706 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2023-10-05 09:58:03,609 INFO    MainThread:48706 [wandb_run.py:_footer_history_summary_info():3586] rendering summary
+2023-10-05 09:58:03,609 INFO    MainThread:48706 [wandb_run.py:_footer_sync_info():3513] logging synced files
+2023-10-05 09:58:03,610 DEBUG   HandlerThread:48706 [handler.py:handle_request():144] handle_request: shutdown
+2023-10-05 09:58:03,611 INFO    HandlerThread:48706 [handler.py:finish():844] shutting down handler
+2023-10-05 09:58:04,436 INFO    WriterThread:48706 [datastore.py:close():294] close: /home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/wandb/run-20231005_095753-8ta6ii87/run-8ta6ii87.wandb
+2023-10-05 09:58:04,608 INFO    SenderThread:48706 [sender.py:finish():1534] shutting down sender
+2023-10-05 09:58:04,608 INFO    SenderThread:48706 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-05 09:58:04,608 INFO    SenderThread:48706 [file_pusher.py:join():181] waiting for file pusher

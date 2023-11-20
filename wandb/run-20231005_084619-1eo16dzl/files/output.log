@@ -1,0 +1,11 @@
+[INFO] val_loss has been improved from inf to 0.20798. Saving Model!
+epoch 01, loss: 0.00000, acc: 0.00000, val_loss: 0.83192, val_accuracy: 0.48000
+epoch 02, loss: 0.00000, acc: 0.00000, val_loss: 0.83192, val_accuracy: 0.48000
+epoch 03, loss: 0.00000, acc: 0.00000, val_loss: 0.83192, val_accuracy: 0.48000
+epoch 04, loss: 0.00000, acc: 0.00000, val_loss: 0.83192, val_accuracy: 0.48000
+epoch 05, loss: 0.00000, acc: 0.00000, val_loss: 0.83192, val_accuracy: 0.48000
+epoch 06, loss: 0.00000, acc: 0.00000, val_loss: 0.83192, val_accuracy: 0.48000
+epoch 07, loss: 0.00000, acc: 0.00000, val_loss: 0.83192, val_accuracy: 0.48000
+epoch 08, loss: 0.00000, acc: 0.00000, val_loss: 0.83192, val_accuracy: 0.48000
+epoch 09, loss: 0.00000, acc: 0.00000, val_loss: 0.83192, val_accuracy: 0.48000
+epoch 10, loss: 0.00000, acc: 0.00000, val_loss: 0.83192, val_accuracy: 0.48000

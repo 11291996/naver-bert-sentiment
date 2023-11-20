@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+training loss: 118.26952, training accuracy: 0.48438: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 12/12 [00:15<00:00,  1.29s/batch]
+Traceback (most recent call last):
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 258, in <module>
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 245, in main
+  File "/home/paneah/Desktop/developing/projects/machine learning/nlp/naver_bert_sentiment/train.py", line 200, in model_evaluate
+    corr += torch.sum(pred.eq(labels)).item()
+                      ^^^^^^^^^^^^^^^
+RuntimeError: The size of tensor a (512) must match the size of tensor b (128) at non-singleton dimension 0
